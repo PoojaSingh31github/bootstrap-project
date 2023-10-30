@@ -1,0 +1,260 @@
+<!-- first of all there is boiler plate, DOCTYPE html is the version of html5 then its shows lang "en" means english. here,we can also write the code in different languages -->
+
+<!-- head part that contain the title and style links, here I linked the bootstrap stylesheet and normal stylesheet -->
+
+<!-- <meta charset="UTF-8"> is used to specify the character encoding for a web page, ensuring that text is displayed correctly with international characters. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="./css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <!-- here my body started with navbar with differnt link connected for different pages-->
+  <nav class="navbar navbar-expand-lg  text-light bg-body-tertiary bg-dark">
+    <div class="container-fluid mx-sm-5 flex-sm-wrap">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarSupportedContent">
+        <ul class="navbar-nav nav-pills w-100  me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Products
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./Boots.html">Boots</a></li>
+              <li><a class="dropdown-item" href="./sandles.html">Sandles</a></li>
+              <li><a class="dropdown-item" href="./Shoes.html">Shoes</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about-us.html">About us</a>
+          </li>
+        </ul>
+      </div>
+      <div class="form">
+                 <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+        <!-- here I'm going to show the carousel effect for my different banner images -->
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./img/sandlesss.jpg" class="d-block w-100" style="height: 500px;" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/6.jpg" class="d-block w-100" style="height: 500px;"  alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/7.jpg" class="d-block w-100" style="height: 500px;"  alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+      </div>
+    <!--  cards -->
+    <div class="container py-5">
+        <h1 class="text-center">Wear the best</h1>
+        <div class="row row-cols-1 row-cols-md-3 g-4 py-5">
+
+            <div class="col">
+                <div class="card">
+                    <img src="./img/boots1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Boots</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                            dignissimos accusantium amet similique velit iste.</p>
+                    </div>
+                    <div class="mb-5 mx-4 d-flex justify-content-between">
+                        <h3>190$</h3>
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="./img/sandles1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Sandles</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                            dignissimos accusantium amet similique velit iste.</p>
+                    </div>
+                    <div class="mb-5 d-flex justify-content-around">
+                        <h3>150$</h3>
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="./img/shoes1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Shoes</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                            dignissimos accusantium amet similique velit iste.</p>
+                    </div>
+                    <div class="mb-5 d-flex justify-content-around">
+                        <h3>180$</h3>
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+ <!-- accordion part for some questions and answer (some common question come in mind of costumer so  for that we use the accordion which shows some answer when we click on it)-->
+ <div class="container my-5">
+  <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expaded="true" aria-controls="collapseOne">
+            What is special about our company?
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>Quality with comfort </strong> we're passionate about footwear, and it's our mission to provide you with the finest shoes that combine style, comfort, and quality. Founded in 2005, we've spent over a decade curating a diverse collection of shoes to suit every taste, occasion, and lifestyle.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+             What are Varieties do we have for the footwears? 
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>Available for different style and for different personality </strong> A successful shoe company typically offers a wide variety of shoe types and styles to cater to the diverse needs and preferences of their customers. Here's a comprehensive list of the types of shoes a shoe company might offer:
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            What do have for the Fashion and Trendy?
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>Versatility and Latest Trends</strong> we understand that fashion is a personal expression, and we're committed to offering a diverse and exciting range of fashionable shoes to keep you at the forefront of style. Here's what you can expect from our fashion and trendy shoe collection.
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+    <!-- footer part with some text and some contacting information-->
+      <!-- footer -->
+      <footer class="bg-dark d-flex text-white justify-content-center">
+        <div class="p-2 m-0 container">
+          <div class="container">
+            <div class="row bg-succes text-cener " style="border-bottom: 1px solid rgb(153, 123, 101);">
+              <div class="col-sm">
+                  <h1>Company</h1>
+                  <p>Home</p>
+                  <p>Shop</p>
+                  <p>About us</p>
+                  <p>Contact</p>
+                  <p>Boots</p>
+                  <p>shoes</p>
+              </div>
+              <div class="col-sm">
+                <h1>Contact</h1>
+                <h5>Follows us on Social Media</h5>
+                <p>Facebook</p>
+                <p>Twitter</p>
+                <p>Instagram</p>
+                <p>Youtube</p>
+                <p>Whatup</p>
+                <p>E-mail</p>
+                <p>B-logs</p>
+              </div>
+              <div class="col-sm">
+                <h1>Categories</h1>
+                <p>Men</p>
+                <p>Women</p>
+                <p>children</p>
+                <p>Sports</p>
+                <p>Casuals</p>
+              </div>
+              <div class="col-sm">
+                <h1>About us</h1>
+                <p>We are dedicated to providing the finest quality shoes to our customers. With over 20 years of experience in the footwear industry, we take pride in our craftsmanship and commitment to style and comfort. Our mission is to help you put your best foot forward, no matter where life takes you.</p>
+              </div>
+              
+            </div>
+      
+            <div class="text-center p-4 d-flex justify-content-around">
+                <p>© 2020 Copyright: MDBootstrap.com</p>
+      
+                <div>
+                  <a href="" class="text-white px-2"> <i class="fa fa-home"></i>
+                  </a>
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+
+<!-- bootstrap javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+<!--  thounght notes   -->
+
+
+<!-- Now, I want to explain something about my web page of bootstrap that here, I make different folders like :-img, index, sandle, shoes, boots, css... in img folder, I put my all the images which I was going to used in my project. then started with the nav bar and style it with bootstrap first, then I fix the banner image and some card part then accordion. first, I used some dommy text on accodion then at last I changed it but still I left some dommy text on my website at end I made footer part of my index (home page) file......
+same I tried with the dropdrow pages like(boots, shoes and sandle) 
+at end I made my about page with some price, text, question same used in index page
+***********************************************************************************************************************************************
+***********************************************************************************************************************************************
+As we started on working bootstrap, first of all we generate the boiler plate then imported the bootstrap
+1. navbar:- I used the class "navbar" and expand it to lg(large) and I gave the text color light and background color dark and background body is tertiary...... then in div, Iused class "container-fluid" which is used to take full width of window then giva its size and wrap property..... then button, I gave property of navbar-toggler which used to determine which button exactly is used as the toggler to toggle the navbar when the viewport precedes the predetermined size... here, I gave one drop down functionality with three link which open the respective pages..... then, I put about page link and then made a form tag to put input for searching.
+_________________________________________________________________________________________________________________________________________________
+2. carousel:- Here, I put bootstrap functionality for carousel. there is three image with one active(which shows first) then, I put button to change it. there, I used icon of previous and next with text previour and next and give it class of visuality-hidden.
+_________________________________________________________________________________________________________________________________________________
+3. Card:-I made three cards with different images of shoes and for writting about that shoe, i used domy text then i mention its price and gave a button for buy it.
+_________________________________________________________________________________________________________________________________________________
+4. accordion:- This is the question answer page. here, I wrote some basic questions what constumer ask genrally. i used three accordion Buttons and give it some background color and hover effects to heading(question) and paragraph(answer).
+_________________________________________________________________________________________________________________________________________________
+5. Footer:- Here, I used the text color white and background dark and put text with using 4 columns and at end give it a Border of rgb(153, 123, 101) color after ending of footer I gave some extra text area for mentioning copright. and mention some icon ( area for puting insta facebook twitter links).
+_________________________________________________________________________________________________________________________________________________
+6. repective pages(shoes, Boots, sandles):- Here. I gave navbar same as home page then put a card top image then after it put some div with coloumns pattern to make the image (add to cart). and for writing about it I used some dommy text and give a button to make it add to cart. and then, put the accordion same as home page at end footer.
+for about also I used same header, accordion and footer I put a table to describe the sale.
+___________________________________________________________________________________________________________________________________________________
+7. font-family:- i used different font family by importing it from google font.
+__________________________________________________________________________________________________________________________________________________
+8. style sheet:- to give some extra style to my web page I used style sheet with link it to my all pages on top I put all the font family imported links then, i give margin 0 and padding 0 to whole window by using universal selector then I used different classes to style web page. i used shadow of "box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;" externally from google.
+__________________________________________________________________________________________________________________________________________________
+   -->
